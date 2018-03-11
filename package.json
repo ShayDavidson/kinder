@@ -1,6 +1,6 @@
 {
   "name": "kinder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easily create simple shell commands with a local config file.",
   "author": "Shay Davidson <shay.h.davidson@gmail.com>",
   "keywords": [
@@ -21,9 +21,6 @@
   "scripts": {
     "lint": "eslint ./src",
     "format": "eslint --fix ./src"
-  },
-  "bin": {
-    "peeare": "./src/cli.js"
   },
   "husky": {
     "hooks": {
