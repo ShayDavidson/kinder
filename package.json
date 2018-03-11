@@ -1,0 +1,49 @@
+{
+  "name": "kinder",
+  "version": "1.0.0",
+  "description": "Easily create simple shell commands with a local config file.",
+  "author": "Shay Davidson <shay.h.davidson@gmail.com>",
+  "keywords": [
+    "simple",
+    "cli",
+    "shell",
+    "command"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShayDavidson/kinder"
+  },
+  "license": "MIT",
+  "main": "src/cli.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "lint": "eslint ./src",
+    "format": "eslint --fix ./src"
+  },
+  "bin": {
+    "peeare": "./src/cli.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "dot-file-config": "^0.6.1",
+    "lodash.maxby": "^4.6.0",
+    "node-ask": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-prettier": "^2.8.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "husky": "^0.15.0-rc.3",
+    "prettier": "^1.8.2"
+  }
+}
