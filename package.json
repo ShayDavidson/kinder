@@ -1,6 +1,6 @@
 {
   "name": "kinder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easily create simple shell commands with a local config file.",
   "author": "Shay Davidson <shay.h.davidson@gmail.com>",
   "keywords": [
@@ -14,13 +14,13 @@
     "url": "https://github.com/ShayDavidson/kinder"
   },
   "license": "MIT",
-  "main": "src/cli.js",
+  "main": "index.js",
   "engines": {
     "node": ">=6.0.0"
   },
   "scripts": {
-    "lint": "eslint ./src",
-    "format": "eslint --fix ./src"
+    "lint": "eslint *.js",
+    "format": "eslint --fix *.js"
   },
   "husky": {
     "hooks": {
